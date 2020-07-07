@@ -3,6 +3,6 @@ It measures: temperature (°C), pressure (hPa), Humidity (%), CO2 (ppm), volatil
 Data can be,  displayed on LCD screen, displayed on computer screen with a Node-Red dashboard, stored on sd card then displayed on graph with python script.
 It uses Seed studio Grove shield to simplify component connection.
 
-![](carte-english.png)
+![](carte_english.png)
 
 
