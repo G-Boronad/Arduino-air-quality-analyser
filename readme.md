@@ -2,6 +2,6 @@ This is a air analyser programmed with Arduino. It can be used to study air qual
 Data can be,  displayed on LCD screen, displayed on computer screen with a Node-Red dashboard, stored on sd card then displayed on graph with python script.
 It uses Seed studio Grove shield to simplify component connection.
 
-![](carte_english.png)
+![](carte-english.png)
 
 
