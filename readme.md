@@ -10,7 +10,7 @@ Data can be,  displayed on LCD screen, displayed on computer screen with a Node-
 
 It uses Seed studio Grove shield to simplify component connection.
 
-![](carte-english.png)
+![](carte_english.png)
 
 ## Connection explanation:
 * Grove shield is plugged on Mega board then sd shield is plugged en Grove sheield.
