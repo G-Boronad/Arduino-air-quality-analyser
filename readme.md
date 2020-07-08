@@ -30,10 +30,11 @@ It uses Seed studio Grove shield to simplify component connection.
 * LED is connected to D3 plug on Grove shield
 
 ## Functions
-When the program is starting, you have to make a choice between the three functions of the analyser.
-* display sensor values on the LCD screen
-* data logging on sd card
-* send data to Node-Red thrue serial link
+When the program is starting, you have to make a choice between the three functions of the analyser:
+* display sensor values on the LCD screen;
+* data logging on sd card;
+* send data to Node-Red thrue serial link.
+
 I use an automat like below to make this choice
 ![](automat.png)
 ## Node-Red
