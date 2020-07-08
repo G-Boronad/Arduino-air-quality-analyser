@@ -1,5 +1,7 @@
 # Arduino  air analyser
 
+
+## The project:
 This is a air analyser programmed with Arduino. It can be used to study air quality.
 
 It measures temperature (°C), pressure (hPa), Humidity (%), CO2 (ppm), volatile organic compounds = VOC and specialy HCHO (µg/m3), and particles PM1 PM2.5 and PM10 (µg/m3).
@@ -36,6 +38,7 @@ When the program is starting, you have to make a choice between the three functi
 * send data to Node-Red thrue serial link.
 
 I use an automat like below to make this choice
+
 ![](automat.png)
 ## Node-Red
 
