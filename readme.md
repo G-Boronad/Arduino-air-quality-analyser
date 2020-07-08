@@ -53,6 +53,7 @@ https://nodered.org/docs/getting-started/windows  ; https://nodered.org/docs/get
 
 - Mega board is sending data with JSON format thrue serial link to Node-Red.
 - Import flows with  [flows.json-1.txt](flows.json-1.txt)
+- Don't forget to change the Com port name in Serial node.
 - You can see flows below
 
 ![](flows.jpg)
