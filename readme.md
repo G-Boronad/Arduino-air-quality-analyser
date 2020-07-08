@@ -6,6 +6,6 @@ Data can be,  displayed on LCD screen, displayed on computer screen with a Node-
 
 It uses Seed studio Grove shield to simplify component connection.
 
-![](carte_english.png)
+![](carte-english.png)
 
 
