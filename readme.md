@@ -1,4 +1,4 @@
-# Arduino  air analyser
+# Arduino  air quality analyser
 
 
 ## The project:
@@ -57,7 +57,7 @@ https://nodered.org/docs/getting-started/windows  ; https://nodered.org/docs/get
 
 ![](flows.jpg)
 
-- Then result on realtime dashboard. I use this dashboard to display data in classroom for may student.
+- Then result on realtime dashboard. I use this dashboard to display data in classroom with my students.
 
 ![](Dashboard.jpg)
 
