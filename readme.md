@@ -53,14 +53,13 @@ https://nodered.org/docs/getting-started/windows  ; https://nodered.org/docs/get
 
 - Mega board is sending data with JSON format thrue serial link to Node-Red.
 - Import flows with  [flows.json-1.txt](flows.json-1.txt)
-- Jou can see flows below
+- You can see flows below
 
 ![](flows.jpg)
-The result on dashboard. I use this dashboard to display data in classroom for may student.
+
+- Then result on realtime dashboard. I use this dashboard to display data in classroom for may student.
 
 ![](Dashboard.jpg)
-
-
 
 
 ## Python scripts:
