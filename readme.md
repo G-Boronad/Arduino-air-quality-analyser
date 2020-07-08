@@ -33,10 +33,10 @@ It uses Seed studio Grove shield to simplify component connection.
 
 * LED is connected on D3 plug on Grove shield
 
-## Start up:
+## Installation:
 - Install all librarys on Arduino.
 - You may need to set time and date on RTC module with RTC_set_time.ino sketch.
-- upload version1.ino sketch on to Mega board.
+- Upload version1.ino sketch on to Mega board.
 
 ## Functions:
 When the program is starting, you have to make a choice between three functions of the analyser:
@@ -48,6 +48,12 @@ I use an automat with button as follows to make this choice.
 
 ![](automat.png)
 ## Node-Red:
+See here ton install Node-Red on windows:
+https://nodered.org/docs/getting-started/windows  ; https://nodered.org/docs/getting-started/local
+
+Mega board is sending data with JSON format thrue serial link to Node-Red
+Import flows with  [flows.json-1.txt](flows.json-1.txt)
+
 
 
 ## Python scripts:
