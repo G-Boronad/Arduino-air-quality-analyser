@@ -35,7 +35,7 @@ It uses Seed studio Grove shield to simplify component connection.
 
 ## Installation:
 - Install all librarys on Arduino.
-- You may need to set time and date on RTC module with RTC_set_time.ino sketch.
+- You may need to set time and date on RTC module with [RTC_set_time.ino](RTC_set_time.ino) sketch.
 - Upload version1.ino sketch on to Mega board.
 
 ## Functions:
@@ -48,11 +48,14 @@ I use an automat with button as follows to make this choice.
 
 ![](automat.png)
 ## Node-Red:
-See here ton install Node-Red on windows:
+- See here ton install Node-Red on windows:
 https://nodered.org/docs/getting-started/windows  ; https://nodered.org/docs/getting-started/local
 
-Mega board is sending data with JSON format thrue serial link to Node-Red
-Import flows with  [flows.json-1.txt](flows.json-1.txt)
+- Mega board is sending data with JSON format thrue serial link to Node-Red.
+- Import flows with  [flows.json-1.txt](flows.json-1.txt)
+- Jou can see flows below
+[](flows.jpeg)
+
 
 
 
