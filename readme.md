@@ -13,6 +13,8 @@ It uses Seed studio Grove shield to simplify component connection.
 ![](carte-english.png)
 
 ## Connection explanation:
+* Grove shield is plugged on Mega board then sd shield is plugged en Grove sheield.
+
 * SD Shield is attached to SPI bus as follows:
     * MOSI - pin 11 on sd shield connected with wire to  pin 51 on  Mega
     * MISO - pin 12 on sd shield connected with wire to  pin 50 on Mega
@@ -37,7 +39,7 @@ When the program is starting, you have to make a choice between the three functi
 * data logging on sd card;
 * send data to Node-Red thrue serial link.
 
-I use an automat like below to make this choice
+I use an automat as follows to make this choice.
 
 ![](automat.png)
 ## Node-Red
