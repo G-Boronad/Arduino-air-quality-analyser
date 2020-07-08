@@ -16,34 +16,35 @@ It uses Seed studio Grove shield to simplify component connection.
 * Grove shield is plugged on Mega board then sd shield is plugged en Grove sheield.
 
 * SD Shield is attached to SPI bus as follows:
-    * MOSI - pin 11 on sd shield connected with wire to  pin 51 on  Mega
-    * MISO - pin 12 on sd shield connected with wire to  pin 50 on Mega
-    * CLK - pin 13 on sd shield connected with wire to  pin 52 on Méga
-    * CS  - depends on your SD card shield : pin 10 for mine.
+    * MOSI - pin 11 on sd shield is connected with wire on  pin 51 on  Mega
+    * MISO - pin 12 on sd shield is connected with wire on  pin 50 on Mega
+    * CLK - pin 13 on sd shield is connected with wire on  pin 52 on Méga
+    * CS  - depends on your SD card shield (pin 10 on my shield).
     
 * SD shield is attached to I2C  bus for RTC module as follows:
-    * sda pin on sd shield connected with jumper to  A4 pin on sd shield
-    * scl pin on sd shield connected with jumper to  A5 pin on sd shield
+    * sda pin on sd shield is connected with jumper to  A4 pin on sd shield
+    * scl pin on sd shield is connected with jumper to  A5 pin on sd shield
       
-* HCHO  sensor on pin 19 (Rx1) on Mega 
+* HCHO  sensor is connected on pin 19 (Rx1) on Mega 
 
 * CO2 sensor, lcd display, BME280 sensor and particles sensor are attached to I2C plugs en Grove Shield
 
-* Button is connected to D2 plug on Grove shiled
+* Button is connected on D2 plug on Grove shield
 
-* LED is connected to D3 plug on Grove shield
+* LED is connected on D3 plug on Grove shield
 
 ## Start up:
 - Install all librarys on Arduino.
 - You may need to set time and date on RTC module with RTC_set_time.ino sketch.
 - upload version1.ino sketch on to Mega board.
+
 ## Functions:
-When the program is starting, you have to make a choice between the three functions of the analyser:
+When the program is starting, you have to make a choice between three functions of the analyser:
 * display sensor values on the LCD screen;
 * data logging on sd card;
 * send data to Node-Red thrue serial link.
 
-I use an automat as follows to make this choice.
+I use an automat with button as follows to make this choice.
 
 ![](automat.png)
 ## Node-Red:
