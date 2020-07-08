@@ -21,7 +21,7 @@ It uses Seed studio Grove shield to simplify component connection.
     * CLK - pin 13 on sd shield connected with wire to  pin 52 on Méga
     * CS  - depends on your SD card shield : pin 10 for mine.
     
-* SD shield is attached to I2C bus as follows:
+* SD shield is attached to I2C  bus for RTC module as follows:
     * sda pin on sd shield connected with jumper to  A4 pin on sd shield
     * scl pin on sd shield connected with jumper to  A5 pin on sd shield
       
@@ -33,7 +33,11 @@ It uses Seed studio Grove shield to simplify component connection.
 
 * LED is connected to D3 plug on Grove shield
 
-## Functions
+## Start up:
+- Install all librarys on Arduino.
+- You may need to set time and date on RTC module with RTC_set_time.ino sketch.
+- upload version1.ino sketch on to Mega board.
+## Functions:
 When the program is starting, you have to make a choice between the three functions of the analyser:
 * display sensor values on the LCD screen;
 * data logging on sd card;
@@ -42,8 +46,9 @@ When the program is starting, you have to make a choice between the three functi
 I use an automat as follows to make this choice.
 
 ![](automat.png)
-## Node-Red
+## Node-Red:
 
-## Python scripts
+
+## Python scripts:
  
 
