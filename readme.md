@@ -28,5 +28,11 @@ It uses Seed studio Grove shield to simplify component connection.
 * Button is connected to D2 plug on Grove shiled
 
 * LED is connected to D3 plug on Grove shield
+
+## Functions
+
+## Node-REd
+
+## Python scripts
  
 
