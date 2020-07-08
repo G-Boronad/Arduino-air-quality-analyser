@@ -1,0 +1,757 @@
+[
+    {
+        "id": "49f19ef6.49312",
+        "type": "tab",
+        "label": "Flow-Jauges",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "8dc29a2c.672f78",
+        "type": "tab",
+        "label": "Flow-Graphiques",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "490e8c5a.b1e40c",
+        "type": "serial-port",
+        "z": "",
+        "serialport": "COM5",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "1998fb5d.929235",
+        "type": "ui_group",
+        "z": "",
+        "name": "Pression Temp",
+        "tab": "f98cb201.05716",
+        "disp": false,
+        "width": 4,
+        "collapse": false
+    },
+    {
+        "id": "f9e379ad.d39a08",
+        "type": "ui_group",
+        "z": "",
+        "name": "PM_Hum",
+        "tab": "f98cb201.05716",
+        "order": 2,
+        "disp": false,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "da23fcd.11b348",
+        "type": "ui_group",
+        "z": "",
+        "name": "CO2 Cov",
+        "tab": "f98cb201.05716",
+        "order": 3,
+        "disp": false,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "f98cb201.05716",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Jauges",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2f3e8699.627c62",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#8080ff",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#8080ff",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#408c68",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#8080ff",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#def7fe",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Analyse de l'air",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 80,
+                "sy": 60,
+                "gx": 10,
+                "gy": 10,
+                "cx": 10,
+                "cy": 10,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "92406d08.d7b5a",
+        "type": "ui_group",
+        "z": "",
+        "name": "Default",
+        "tab": "",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "67d71e14.269518",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Courbes",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "255f8062.6c07f8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Graphs",
+        "tab": "67d71e14.269518",
+        "disp": false,
+        "width": 9,
+        "collapse": false
+    },
+    {
+        "id": "80034888.f6927",
+        "type": "serial-port",
+        "z": "",
+        "serialport": "COM3",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "830607fd.07eef",
+        "type": "serial-port",
+        "z": "",
+        "serialport": "COM11",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "d9da514.298793",
+        "type": "serial in",
+        "z": "49f19ef6.49312",
+        "name": "Port SERIE",
+        "serial": "830607fd.07eef",
+        "x": 80,
+        "y": 200,
+        "wires": [
+            [
+                "139ee2a0.9cbd8d",
+                "8ed08694.8103f8"
+            ]
+        ]
+    },
+    {
+        "id": "139ee2a0.9cbd8d",
+        "type": "debug",
+        "z": "49f19ef6.49312",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 250,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "8ed08694.8103f8",
+        "type": "json",
+        "z": "49f19ef6.49312",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 250,
+        "y": 220,
+        "wires": [
+            [
+                "4c3e3177.154bc8",
+                "176d9fd3.8a90d",
+                "fdabc2a5.0bad2",
+                "f44ff819.df899",
+                "d1c55228.b7932",
+                "be3bc1a3.e36728",
+                "3ce31c96.2046d4"
+            ]
+        ]
+    },
+    {
+        "id": "4c3e3177.154bc8",
+        "type": "function",
+        "z": "49f19ef6.49312",
+        "name": "CO2",
+        "func": "msg.payload = msg.payload.CO2;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 450,
+        "y": 120,
+        "wires": [
+            [
+                "d8f9ba98.b8f89"
+            ]
+        ]
+    },
+    {
+        "id": "176d9fd3.8a90d",
+        "type": "function",
+        "z": "49f19ef6.49312",
+        "name": "Temperature",
+        "func": "msg.payload = msg.payload.Temp;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 470,
+        "y": 260,
+        "wires": [
+            [
+                "66e77dd.d8a2b84"
+            ]
+        ]
+    },
+    {
+        "id": "66e77dd.d8a2b84",
+        "type": "ui_gauge",
+        "z": "49f19ef6.49312",
+        "name": "Température",
+        "group": "1998fb5d.929235",
+        "order": 2,
+        "width": "4",
+        "height": 3,
+        "gtype": "gage",
+        "title": "Température",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#00ff40",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 710,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "fdabc2a5.0bad2",
+        "type": "function",
+        "z": "49f19ef6.49312",
+        "name": "Pression",
+        "func": "msg.payload = msg.payload.Pression;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 460,
+        "y": 380,
+        "wires": [
+            [
+                "9af7496.ab4ca38"
+            ]
+        ]
+    },
+    {
+        "id": "9af7496.ab4ca38",
+        "type": "ui_gauge",
+        "z": "49f19ef6.49312",
+        "name": "Pression",
+        "group": "1998fb5d.929235",
+        "order": 1,
+        "width": "4",
+        "height": 3,
+        "gtype": "gage",
+        "title": "Pression",
+        "label": "hPa",
+        "format": "{{value}}",
+        "min": "960",
+        "max": "1060",
+        "colors": [
+            "#ff0000",
+            "#ff8000",
+            "#00ff00"
+        ],
+        "seg1": "995",
+        "seg2": "1010",
+        "x": 700,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "f44ff819.df899",
+        "type": "function",
+        "z": "49f19ef6.49312",
+        "name": "humidite",
+        "func": "msg.payload = msg.payload.Hum;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 460,
+        "y": 320,
+        "wires": [
+            [
+                "9c5db4a2.7e0c1"
+            ]
+        ]
+    },
+    {
+        "id": "9c5db4a2.7e0c1",
+        "type": "ui_gauge",
+        "z": "49f19ef6.49312",
+        "name": "",
+        "group": "f9e379ad.d39a08",
+        "order": 2,
+        "width": "4",
+        "height": 3,
+        "gtype": "gage",
+        "title": "Humidité relative",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "30",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "60",
+        "seg2": "75",
+        "x": 730,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "d1c55228.b7932",
+        "type": "function",
+        "z": "49f19ef6.49312",
+        "name": "Cov",
+        "func": "msg.payload = msg.payload.Cov;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 450,
+        "y": 180,
+        "wires": [
+            [
+                "896b5924.bfa19"
+            ]
+        ]
+    },
+    {
+        "id": "896b5924.bfa19",
+        "type": "ui_gauge",
+        "z": "49f19ef6.49312",
+        "name": "Cov",
+        "group": "da23fcd.11b348",
+        "order": 2,
+        "width": "4",
+        "height": 3,
+        "gtype": "gage",
+        "title": "Composés organiques volatiles",
+        "label": "µg/m3",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#00b500",
+            "#ca3838",
+            "#ca3838"
+        ],
+        "seg1": "100",
+        "seg2": "1000",
+        "x": 690,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "d8f9ba98.b8f89",
+        "type": "ui_gauge",
+        "z": "49f19ef6.49312",
+        "name": "CO2",
+        "group": "da23fcd.11b348",
+        "order": 1,
+        "width": "4",
+        "height": 3,
+        "gtype": "gage",
+        "title": "CO2",
+        "label": "ppm",
+        "format": "{{value}}",
+        "min": "400",
+        "max": "2500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "1500",
+        "seg2": "2000",
+        "x": 690,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "be3bc1a3.e36728",
+        "type": "function",
+        "z": "49f19ef6.49312",
+        "name": "PM10",
+        "func": "msg.payload = msg.payload.PM10;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 450,
+        "y": 440,
+        "wires": [
+            [
+                "184ddedb.3518d1"
+            ]
+        ]
+    },
+    {
+        "id": "184ddedb.3518d1",
+        "type": "ui_gauge",
+        "z": "49f19ef6.49312",
+        "name": "Particules PM10",
+        "group": "f9e379ad.d39a08",
+        "order": 1,
+        "width": "4",
+        "height": 3,
+        "gtype": "gage",
+        "title": "Particules PM10",
+        "label": "µg/m3",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "50",
+        "x": 730,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "9b8a0afb.fb4dd",
+        "type": "function",
+        "z": "8dc29a2c.672f78",
+        "name": "Particules",
+        "func": "var msg1 = {};\nvar msg2 = {};\nvar msg3 = {};\n\nmsg1.payload = msg.payload.PM1;\nmsg1.topic = 'PM1'\n\nmsg2.payload = msg.payload.PM25;\nmsg2.topic = 'PM2,5'\n\nmsg3.payload = msg.payload.PM10;\nmsg3.topic = 'PM10'\nreturn [msg1, msg2, msg3];",
+        "outputs": 3,
+        "noerr": 0,
+        "x": 300,
+        "y": 180,
+        "wires": [
+            [
+                "e5d17aac.8a9808"
+            ],
+            [
+                "e5d17aac.8a9808"
+            ],
+            [
+                "e5d17aac.8a9808"
+            ]
+        ]
+    },
+    {
+        "id": "42c6f986.9c2a98",
+        "type": "function",
+        "z": "8dc29a2c.672f78",
+        "name": "Cov",
+        "func": "msg.payload = msg.payload.Cov;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 290,
+        "y": 320,
+        "wires": [
+            [
+                "9486f729.ab6188"
+            ]
+        ]
+    },
+    {
+        "id": "e5d17aac.8a9808",
+        "type": "ui_chart",
+        "z": "8dc29a2c.672f78",
+        "name": "Particules",
+        "group": "255f8062.6c07f8",
+        "order": 1,
+        "width": 9,
+        "height": 4,
+        "label": "Particules fines en µg/m3",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "250",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#ff8040",
+            "#004080",
+            "#ff00ff",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 620,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9486f729.ab6188",
+        "type": "ui_chart",
+        "z": "8dc29a2c.672f78",
+        "name": "Cov",
+        "group": "255f8062.6c07f8",
+        "order": 2,
+        "width": 9,
+        "height": "4",
+        "label": "Composés organiques volatiles en µg/m3",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "",
+        "removeOlder": "2",
+        "removeOlderPoints": "1000",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 590,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3ce31c96.2046d4",
+        "type": "link out",
+        "z": "49f19ef6.49312",
+        "name": "lien",
+        "links": [
+            "a9fef725.fa88d"
+        ],
+        "x": 355,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "a9fef725.fa88d",
+        "type": "link in",
+        "z": "8dc29a2c.672f78",
+        "name": "Lien",
+        "links": [
+            "3ce31c96.2046d4"
+        ],
+        "x": 155,
+        "y": 260,
+        "wires": [
+            [
+                "9b8a0afb.fb4dd",
+                "42c6f986.9c2a98",
+                "961ae180.f067d"
+            ]
+        ]
+    },
+    {
+        "id": "961ae180.f067d",
+        "type": "function",
+        "z": "8dc29a2c.672f78",
+        "name": "CO2",
+        "func": "msg.payload = msg.payload.CO2;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 290,
+        "y": 400,
+        "wires": [
+            [
+                "c2ae39c4.805838"
+            ]
+        ]
+    },
+    {
+        "id": "c2ae39c4.805838",
+        "type": "ui_chart",
+        "z": "8dc29a2c.672f78",
+        "name": "Co2",
+        "group": "255f8062.6c07f8",
+        "order": 2,
+        "width": "9",
+        "height": "4",
+        "label": "CO2 en ppm",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "400",
+        "ymax": "2000",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 590,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    }
+]
