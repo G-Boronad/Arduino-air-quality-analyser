@@ -18,8 +18,8 @@ It uses Seed studio Grove shield to simplify component connection.
     * CS  - depends on your SD card shield : pin 10 for mine.
     
 * SD shield is attached to I2C bus as follows:
-      - sda pin on sd shield connected with jumper to  A4 pin on sd shield
-      - scl pin on sd shield connected with jumper to  A5 pin on sd shield
+    * sda pin on sd shield connected with jumper to  A4 pin on sd shield
+    * scl pin on sd shield connected with jumper to  A5 pin on sd shield
       
 * HCHO  sensor on pin 19 (Rx1) on Mega 
 
