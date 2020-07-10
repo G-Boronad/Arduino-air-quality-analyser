@@ -67,6 +67,6 @@ https://nodered.org/docs/getting-started/windows  ; https://nodered.org/docs/get
  I use python script to display on graph the data stored on sd card.
  
 * First script  [Graph from csv.py](Python%20scripts/Graph%20from%20csv.py) displays one graph per data per window.
-* Second script [Graph from csv_1graph.py](Python scripts/Graph from csv_1graph.py) displays many graphs on one window. 
+* Second script [Graph from csv_1graph.py](Python%20scripts/Graph%20from%20csv_1graph.py) displays many graphs on one window. 
  
 
