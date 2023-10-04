@@ -20,7 +20,7 @@ It uses an Arduino Méga board and a Seed studio Grove shield to simplify compon
 
 
 
-## Connection explanation:
+## Sensors connections:
 * Grove shield is plugged on Mega board then sd shield is plugged on Grove shield.
 
 * SD Shield is attached to SPI bus as follows:
