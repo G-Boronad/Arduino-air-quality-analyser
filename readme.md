@@ -1,19 +1,27 @@
 # Arduino  air quality analyser
-
+![](carte_english.png)
 
 ## The project:
 This is a air analyser programmed with Arduino. It can be used to study air quality.
+It uses an Arduino Méga board and a Seed studio Grove shield to simplify components connection.
 
-It measures temperature (°C), pressure (hPa), Humidity (%), CO2 (ppm), volatile organic compounds = VOC and specialy HCHO (µg/m3), and particles PM1 PM2.5 and PM10 (µg/m3).
+### Measures:
+* Temperature (°C)
+* Pressure (hPa)
+* Humidity (%)
+* CO2 (ppm)
+* Volatile organic compounds = VOC and specialy HCHO (µg/m3)
+* Particles PM1 PM2.5 and PM10 (µg/m3)
 
-Data can be,  displayed on LCD screen, displayed on computer screen with a Node-Red dashboard, stored on sd card then displayed on graph with python script.
+### Data can be:
+* displayed on LCD scree
+* displayed on computer screen with a Node-Red dashboard
+* stored on sd card then displayed on graph with python script.
 
-It uses Seed studio Grove shield to simplify component connection.
 
-![](carte_english.png)
 
 ## Connection explanation:
-* Grove shield is plugged on Mega board then sd shield is plugged en Grove sheield.
+* Grove shield is plugged on Mega board then sd shield is plugged on Grove shield.
 
 * SD Shield is attached to SPI bus as follows:
     * MOSI - pin 11 on sd shield is connected with wire on  pin 51 on  Mega
@@ -62,9 +70,8 @@ https://nodered.org/docs/getting-started/windows  ; https://nodered.org/docs/get
 
 ![](Dashboard.jpg)
 
-
 ## Python scripts:
- I use python script to display on graph the data stored on sd card.
+ I use python script to display with graph the data stored on sd card.
  
 * First script  [Graph from csv.py](Python%20scripts/Graph%20from%20csv.py) displays one graph per data per window.
 * Second script [Graph from csv_1graph.py](Python%20scripts/Graph%20from%20csv_1graph.py) displays many graphs on one window. 
