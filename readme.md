@@ -18,33 +18,33 @@ It uses an Arduino Mega board and a Seeed Studio Grove shield to simplify compon
 
 ### Data Can Be
 
-* Displayed on an LCD screen
-* Displayed on a computer screen via a Node-RED dashboard
-* Stored on an SD card and visualized as graphs using a Python script
+* Displayed on LCD screen
+* Displayed on computer screen via a Node-RED dashboard
+* Stored on SD card and visualized as graphs using a Python script
 
 ## Sensor Connections
 
-* The Grove shield is plugged into the Mega board. Then, the SD shield is plugged into the Grove shield.
+* Grove shield is plugged into the Mega board. Then, the SD shield is plugged into the Grove shield.
 
-* The SD shield is connected to the SPI bus as follows:
+* SD shield is connected to the SPI bus as follows:
 
-  * **MOSI** — pin 11 on the SD shield connected to pin 51 on the Mega
-  * **MISO** — pin 12 on the SD shield connected to pin 50 on the Mega
-  * **CLK** — pin 13 on the SD shield connected to pin 52 on the Mega
-  * **CS** — depends on your SD shield (pin 10 on mine)
+  * **MOSI** — pin 11 on  SD shield connected to pin 51 on the Mega
+  * **MISO** — pin 12 on  SD shield connected to pin 50 on the Mega
+  * **CLK** — pin 13 on SD shield connected to pin 52 on the Mega
+  * **CS** — depends on your SD shield (pin 10 for mine)
 
-* The SD shield is also connected to the I2C bus for the RTC module:
+* **SD shield** is also connected to the I2C bus for the RTC module:
 
-  * **SDA** on the SD shield is connected via jumper to A4 on the SD shield
-  * **SCL** on the SD shield is connected via jumper to A5 on the SD shield
+  * SDA pin on SD shield is connected via jumper to A4 on the SD shield
+  * SCL pin on SD shield is connected via jumper to A5 on the SD shield
 
-* The **HCHO sensor** is connected to pin 19 (Rx1) on the Mega
+* **HCHO sensor** is connected to pin 19 (Rx1) on the Mega
 
-* The **CO₂ sensor**, **LCD display**, **BME280 sensor**, and **particle sensor** are connected to I2C ports on the Grove shield
+* **CO₂ sensor**, **LCD display**, **BME280 sensor**, and **particle sensor** are connected to I2C ports on the Grove shield
 
-* The **button** is connected to port D2 on the Grove shield
+* **button** is connected to port D2 on the Grove shield
 
-* The **LED** is connected to port D3 on the Grove shield
+* **LED** is connected to port D3 on the Grove shield
 
 ## Installation
 
@@ -70,23 +70,23 @@ I use an automaton with a button, as shown below, to make this selection:
   [https://nodered.org/docs/getting-started/windows](https://nodered.org/docs/getting-started/windows)
   [https://nodered.org/docs/getting-started/local](https://nodered.org/docs/getting-started/local)
 
-* The Mega board sends data in JSON format via the serial connection to Node-RED
+* Mega board sends data in JSON format via the serial connection to Node-RED
 
 * Import the flow using [flows.json-1.txt](flows.json-1.txt)
 
-* Don't forget to change the COM port name in the Serial node
+* Don't forget to change COM port's name in  Serial node
 
-* You can see the flow below:
+* Flow exemple:
 
 ![](flows.jpg)
 
-* Here is the real-time dashboard. I use this dashboard in the classroom with my students:
+* Real-time dashboard. I use this dashboard in classroom with my students:
 
 ![](Dashboard.jpg)
 
 ## Python Scripts
 
-I use Python scripts to graph the data stored on the SD card.
+I use Python scripts to graph datas stored on SD card.
 
 * The first script, [Graph from csv.py](Python%20scripts/Graph%20from%20csv.py), displays one graph per data type in separate windows.
 * The second script, [Graph from csv\_1graph.py](Python%20scripts/Graph%20from%20csv_1graph.py), displays multiple graphs in one window.
