@@ -1,7 +1,3 @@
-Voici une version corrigée et améliorée de ton document en anglais, en conservant le style Markdown :
-
----
-
 # Arduino Air Quality Analyser
 
 ![](carte_english.png)
@@ -94,7 +90,3 @@ I use Python scripts to graph the data stored on the SD card.
 
 * The first script, [Graph from csv.py](Python%20scripts/Graph%20from%20csv.py), displays one graph per data type in separate windows.
 * The second script, [Graph from csv\_1graph.py](Python%20scripts/Graph%20from%20csv_1graph.py), displays multiple graphs in one window.
-
----
-
-Souhaites-tu également une **version française** du document pour tes élèves ou collègues ?
